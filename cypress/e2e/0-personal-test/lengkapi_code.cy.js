@@ -1,5 +1,5 @@
 describe('My first test', () => {
-    it('TC#1 Lengkapi code berikut', () => {
+    it('clicking "type" show the fight headings', () => {
       cy.visit('https://example.cypress.io/')
 
       cy.pause();
