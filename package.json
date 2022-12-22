@@ -1,0 +1,14 @@
+{
+  "name": "eduworkcy",
+  "version": "1.0.0",
+  "description": "automated ui test",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "larry",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.2.0"
+  }
+}
