@@ -4,7 +4,9 @@
   "description": "automated ui test",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "open": "cypress open",
+    "runcloud" : "npx cypress run --browser chrome --record --key d8a13b76-c403-4d27-922d-3e8b9d8f5849",
+    "runspec" : "npx cypress run --spec cypress/e2e/0-personal-test/tugas_interaction.cy.js  --browser chrome --record --key d8a13b76-c403-4d27-922d-3e8b9d8f5849"
   },
   "author": "larry",
   "license": "ISC",

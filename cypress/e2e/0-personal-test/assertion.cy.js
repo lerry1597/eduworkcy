@@ -9,6 +9,6 @@ describe('Browser actions', () => {
     });
 
     it('Shoul check button regist is visible', () => {
-        cy.get('.r-1wtj0ep > :nth-child(2) > .css-18t94o4').should('be.visible')
+        cy.get(':nth-child(2) > .css-18t94o4').should('be.visible')
     });
 });
