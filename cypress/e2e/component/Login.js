@@ -1,9 +1,9 @@
 export class LoginPage{
 
-    username_textbox = '[name="user_login"]'; //menggunakan elemen name
-    password_textbox = '[name="user_password"]'; //menggunakan elemen name
-    checkbox = '[name="user_remember_me"]';
-    login_button = '';
+    username_textbox = '[data-test="username"]'; 
+    password_textbox = '[data-test="password"'; 
+    checkbox = '';
+    login_button = '[data-test="login-button"]';
 
 
     enterUsername(username){
