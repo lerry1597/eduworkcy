@@ -7,9 +7,9 @@ describe('Login form', () => {
         cy.visit('http://zero.webappsecurity.com/')
     })
 
-    it('Shoul include url', () => {
-        cy.url().should('include', 'zero.webappsecurity.com')
-    });
+    // it('Shoul include url', () => {
+    //     cy.url().should('include', 'zero.webappsecurity.com')
+    // });
 
     it('Submite valid form', () => {
         cy.log('Click on signin button')
