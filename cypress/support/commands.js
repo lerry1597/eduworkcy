@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('tfFunds', (from, to, amount, desc) => {
+    cy.get('#tf_fromAccountId').select(from)
+    cy.get('#tf_toAccountId').select(to)
+    cy.get('#tf_amount').type(amount)
+    cy.get('#tf_description').type(desc)
+}); 

@@ -1,7 +1,3 @@
-import { LoginPage } from "../component/Login";
-
-const loginPage = new LoginPage;
-
 describe('Login form', () => {
     beforeEach(() => {
         cy.visit('http://zero.webappsecurity.com/')
