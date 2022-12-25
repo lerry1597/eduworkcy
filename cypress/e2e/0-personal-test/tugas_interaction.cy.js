@@ -16,11 +16,14 @@ describe('Login form', () => {
         cy.get('#signin_button').click()
 
         cy.log('Enter Username and Password')
-        loginPage.enterUsername('username')
-        loginPage.enterPassword('password')
+        cy.get('[name="user_login"]').clear()
+        cy.get('[name="user_login"]').type('username')
+        
+        cy.get('[name="user_password"]').clear()
+        cy.get('[name="user_password"]').type('password')
 
         cy.log('Should activete a checkbox')
-        loginPage.activeCheckbox()
+        cy.get('[name="user_remember_me"]').check();
     });
 
 });
